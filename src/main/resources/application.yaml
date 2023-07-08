@@ -1,0 +1,40 @@
+server:
+  port: 8081
+
+spring:
+
+  application:
+    name: Blockchain
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/blockchain?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    #password: 123456
+    password: zZ@123456
+#  security:
+#    user:
+#      name: user
+#      password: 11111
+  redis:
+    host: 124.223.6.219
+    port: 6379
+    #password: 123321
+
+#  jackson:
+#    default-property-inclusion: non_null # JSON?????????
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+  configuration:
+    #开启驼峰命名
+    map-underscore-to-camel-case: true
+#  type-aliases-package: com.hmdp.entity # ?????
+#blockchain:
+#  jwt:
+#    header: Authorization
+#    expire: 604800 #7天，秒单位
+#    secret: ji8n3439n439n43ld9ne9343fdfer49h
+
+#security:
+#    user:
+#      name: user
+#      password: 111111
